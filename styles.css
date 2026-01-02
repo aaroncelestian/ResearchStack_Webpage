@@ -784,6 +784,218 @@ body {
     text-align: center;
 }
 
+/* ===== CONTACT PAGE ===== */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-3xl);
+}
+
+.contact-card {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto var(--spacing-md);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon svg {
+    width: 30px;
+    height: 30px;
+    stroke: white;
+}
+
+.contact-card h3 {
+    color: var(--gray-900);
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-card p {
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-link {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.contact-link:hover {
+    color: var(--primary-dark);
+}
+
+.contact-form-section {
+    max-width: 600px;
+    margin: 0 auto var(--spacing-3xl);
+    text-align: center;
+}
+
+.contact-form-section h2 {
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-form-section > p {
+    color: var(--gray-600);
+    margin-bottom: var(--spacing-xl);
+}
+
+.contact-form {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-group label {
+    display: block;
+    color: var(--gray-700);
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-md);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.response-time {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: var(--gray-50);
+    border-radius: var(--radius-lg);
+}
+
+.response-time h3 {
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-sm);
+}
+
+.response-time p {
+    color: var(--gray-600);
+}
+
+/* ===== FAQ PAGE ===== */
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-category {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.faq-category h2 {
+    color: var(--gray-900);
+    font-size: 1.75rem;
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 2px solid var(--primary);
+}
+
+.faq-item {
+    background: white;
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--spacing-lg);
+}
+
+.faq-item h3 {
+    color: var(--gray-900);
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.faq-item p {
+    color: var(--gray-600);
+    line-height: 1.6;
+}
+
+.faq-item ul {
+    margin-top: var(--spacing-sm);
+    margin-left: var(--spacing-lg);
+    color: var(--gray-600);
+}
+
+.faq-item ul li {
+    margin-bottom: var(--spacing-xs);
+}
+
+.faq-item a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.faq-item a:hover {
+    text-decoration: underline;
+}
+
+.faq-cta {
+    text-align: center;
+    padding: var(--spacing-3xl) var(--spacing-xl);
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    border-radius: var(--radius-xl);
+    color: white;
+    margin-top: var(--spacing-3xl);
+}
+
+.faq-cta h2 {
+    color: white;
+    margin-bottom: var(--spacing-sm);
+}
+
+.faq-cta p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: var(--spacing-lg);
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
     .hero-content,
